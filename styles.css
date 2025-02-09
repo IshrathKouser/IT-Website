@@ -1,0 +1,423 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s, color 0.5s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #001233;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: yellow;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to top, #001233, #002855);
+  color: white;
+  animation: fadeIn 2s;
+}
+.cta-btn {
+  padding: 10px 15px;
+  background: #ddbea9;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot Button */
+#chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(24, 24, 250);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Chatbot Container */
+#chatbot-container {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 250px;
+  background: #ddbea9;
+  color: #002855;
+  border: 1px solid #002855;
+  padding: 10px;
+}
+
+/* Team */
+.team {
+  text-align: center;
+  padding: 30px;
+  font-size: large;
+  background-color: #001233;
+  color: white;
+}
+
+.team-card {
+  display: inline-block;
+  margin: 20px;
+  color: white;
+  padding: 50px;
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+/* Testimonials About Section */
+.testimonials {
+  background: linear-gradient(to top, #001233, #002855);
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.testimonial-card {
+  background: linear-gradient(to right, #001233, #002855);
+  color: white;
+  width: 100%;
+  padding: 10%;
+}
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #001233;
+  text-align: center;
+  color: white;
+}
+
+.contacth2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #5c677d;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #001845;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #001845;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.contact-form button:hover {
+  background-color: black;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-mediai {
+  font-size: 24px;
+  color: #979dac;
+  transition: color 0.3s ease;
+}
+
+.social-mediat {
+  font-size: 24px;
+  color: #979dac;
+  transition: color 0.3s ease;
+}
+
+.social-mediag {
+  font-size: 24px;
+  color: #979dac;
+  transition: color 0.3s ease;
+}
+
+.social-medial {
+  font-size: 24px;
+  color: #979dac;
+  transition: color 0.3s ease;
+}
+
+.social-mediat:hover {
+  color: #007bff;
+}
+
+.social-mediai:hover {
+  color: #ee0caa;
+}
+
+.social-medial:hover {
+  color: #0980ff;
+}
+
+.social-mediag:hover {
+  color: purple;
+}
+
+.contentc {
+  padding: 20px;
+  background-color: #001845;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #ffe8d6;
+}
+
+.contents {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contenta {
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(to top, #001233, #002855);
+}
+
+
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(170, 12%, 98%);
+  --gray-color: hsl(170, 4%, 60%);
+  --black-color: #001233;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bona Nova", serif;
+  --normal-font-size: .938rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--black-color);
+  color: var(--gray-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container {
+  display: grid;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 348px));
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card__article {
+  position: relative;
+  background-color: var(--black-color);
+  border: 2px solid var(--gray-color);
+  padding: 3rem 1.5rem 1.5rem;
+  display: grid;
+  row-gap: 1rem;
+  overflow: hidden;
+  transition: background-color .6s;
+}
+
+.card__img {
+  width: 200px;
+  justify-self: center;
+  filter: drop-shadow(0 8px 24px hsla(170, 12%, 8%, .1));
+  transition: transform .4s;
+}
+
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: transform .4s, opacity .4s;
+}
+
+.card__title {
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  color: white;
+}
+
+.card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.3);
+  z-index: -1;
+  transition: transform .4s;
+}
+
+.card__button {
+  background-color: var(--white-color);
+  padding: .75rem 1rem;
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  justify-self: center;
+  box-shadow: 0 8px 24px hsla(170, 12%, 8%, .1);
+  position: absolute;
+  bottom: -1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .4s, opacity .4s;
+}
+
+.card__button i {
+  font-size: 1.25rem;
+  transition: transform .4s;
+}
+
+.card__button:hover i {
+  transform: translateX(.5rem);
+}
+
+/* Card animation */
+.card__article:hover .card__img {
+  transform: translateY(-1.5rem);
+}
+
+.card__article:hover .card__data {
+  transform: translateY(-4.5rem);
+  opacity: 0;
+}
+
+.card__article:hover {
+  background-color: transparent;
+}
+
+.card__article:hover .card__bg {
+  transform: scale(1);
+}
+
+.card__article:hover .card__button {
+  transform: translateY(-3.75rem);
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 300px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+  }
+
+  .card__img {
+    width: 220px;
+  }
+}
