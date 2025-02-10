@@ -78,44 +78,6 @@ body {
   border: 1px solid #002855;
   padding: 10px;
 }
-
-/* Team */
-.team {
-  text-align: center;
-  padding: 30px;
-  font-size: large;
-  background-color: #001233;
-  color: white;
-}
-
-.team-card {
-  display: inline-block;
-  margin: 20px;
-  color: white;
-  padding: 50px;
-}
-
-.team-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-
-}
-
-/* Testimonials About Section */
-.testimonials {
-  background: linear-gradient(to top, #001233, #002855);
-  padding: 30px;
-  text-align: center;
-  color: white;
-}
-
-.testimonial-card {
-  background: linear-gradient(to right, #001233, #002855);
-  color: white;
-  width: 100%;
-  padding: 10%;
-}
 /* Contact Section */
 .contact {
   padding: 50px 20px;
